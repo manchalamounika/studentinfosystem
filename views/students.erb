@@ -1,0 +1,17 @@
+<!-- STUDENT RECORDS -->
+<h1 style="color: orange; text-decoration: underline;">Students Record</h1>
+<h4 style="color: blue;"> Currently stored students information is as follow:</h4>
+<% if @records.any? %>
+<ul id="students">
+<% @records.each do |record| %>
+<li><a href="/students/<%=record.id%>"><%=record.first_name%><%=record.last_name %></a></li>
+<% end %>
+</ul>
+<% else %>
+<p style="color: red;">No student information saved till now.</p>
+<% end %>
+<form action="/students/new">
+<input type="submit" value="ADD A NEW STUDENT RECORD" />
+</form>
+<br />
+<button><a href="/logout">LOG OUT</a></button>

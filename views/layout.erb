@@ -1,0 +1,19 @@
+<!-- LAYOUT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title><%= @title || "Student Management" %>
+</title><meta charset="utf-8" />
+<link href="/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+<header>
+<h1>Students Information System</h1>
+<%= erb :nav %>
+</header><section>
+<%= yield %>
+</section>
+
+</body>
+</html>

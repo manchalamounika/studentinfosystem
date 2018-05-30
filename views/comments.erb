@@ -1,0 +1,18 @@
+<!-- COMMENTS -->
+<h1 style="color: orange; text-decoration: underline;"> Comments </h1>
+<h3 style="color: red;"> Here are the comments : </h3>
+
+<% if @coms.any? %>
+<ul id="comments">
+<% @coms.each do |com| %>
+<li><a href="/comments/<%=com.id%>"> <%=com.title%> <%= com.created_at %></a></li>
+<% end %>
+</ul>
+<% else %>
+<p style="color: blue; font-weight: bold;"> There are no comments till now! Add some! </p>
+<% end %>
+<form action="/comments/new">
+<input type="submit" value="Create new comment"/>
+</form>
+<br/>
+

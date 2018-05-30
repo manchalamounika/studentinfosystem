@@ -1,0 +1,17 @@
+<label for="title"> Title: </label>
+<input id="title" name="com[title]" type="text" required value="<%= @com.title %>")/>
+
+<label for="Person"> Name: </label>
+<input id="Person" name="com[Person]" type="text" required value="<%= @com.Person %>" />
+
+<label for="details"> Comment: </label>
+<input id="details" name="com[details]" type="textArea" required value="<%= @com.details %>" />
+
+<input id="comments" name="com[created_at]" type="hidden" required value="<%= @com.created_at %>" />
+
+<br/>
+<br/>
+<input type="submit" value="Submit"/>
+<br/>
+<button><a href="/comments">Back to Comments</a></button>
+
