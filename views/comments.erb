@@ -1,6 +1,6 @@
 <!-- COMMENTS -->
-<h1 style="color: orange; text-decoration: underline;"> Comments </h1>
-<h3 style="color: red;"> Here are the comments : </h3>
+<h1 style="color: orange; text-decoration: underline;" align="center"> Comments </h1>
+<h3 style="color: red;" align="center"> Here are the comments : </h3>
 
 <% if @coms.any? %>
 <ul id="comments">
@@ -11,7 +11,7 @@
 <% else %>
 <p style="color: blue; font-weight: bold;"> There are no comments till now! Add some! </p>
 <% end %>
-<form action="/comments/new">
+<form action="/comments/new" align="center">
 <input type="submit" value="Create new comment"/>
 </form>
 <br/>

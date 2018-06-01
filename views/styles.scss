@@ -23,15 +23,26 @@ body {
 	opacity: 0.9;
 }
 
+input[type=button], input[type=submit], input[type=reset],button {
+  background-color: #4CAD50;
+  border: none;
+  color: white;
+  padding: 16px 52px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 h1 {
   color: $red;
   font: 32px/1 $main-font;
+  align-content: center;
 }
 
 header h1 {
   font-size: 40px;
   line-height: 80px;
+  align-content: center;
   background: transparent url(/images/logo.png) 0 0 no-repeat;
   text-align: right;
     background-size: 100px 100px;
@@ -42,18 +53,22 @@ header h1 {
 @mixin tabs ($background: blue, $color: yellow) {
   ul {
     list-style: none;
+    align-content: center;
     margin: 0;
     padding: 0;
     background: $background;
     overflow: hidden;
   }
+
   li {
     float: left;
+    align-content: center;
   }
   a {
     text-decoration: none;
     display: block;
     padding: 8px;
+    align-content: center;
     background: $background;
     color: $color;
     &:hover {
@@ -65,6 +80,7 @@ header h1 {
 nav {
   @include tabs ($background: $black, $color: $white);
   font-weight: bold;
+  text-align: center;
 }
 
 p {
@@ -79,6 +95,7 @@ ul#students li a {
 	text-decoration: none;
 	font-style: italic;
 	color: $red;
+    align-content: center;
 	font-weight:600;
 }
 

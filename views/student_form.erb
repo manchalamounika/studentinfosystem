@@ -2,28 +2,23 @@
 
 
 <label for="first_name">First Name:</label>
-<input id="first_name" name="record[first_name]" type="text" required value="<%= @record.first_name %>" />
+<input id="first_name" name="record[first_name]" type="text" required placeholder="firstname" value="<%= @record.first_name %>" />
 
 <label for="last_name">Last Name:</label>
-<input id="last_name" name="record[last_name]" type="text" required value="<%= @record.last_name %>" />
+<input id="last_name" name="record[last_name]" type="text" required placeholder="lastname" value="<%= @record.last_name %>" />
 
-<label for="id">Student ID:</label>
-<input id="id" name="record[id]" type="text" required value="<%= @record.id %>" />
+<label for="student_id">Student ID:</label>
+<input id="student_id" name="record[student_id]" type="number" required placeholder="only numbers" value="<%= @record.student_id %>" />
 
 <label for="address">Address:</label>
-<input id="address" name="record[address]" type="text" required value="<%= @record.address %>" />
+<input id="address" name="record[address]" type="text" required placeholder="Address" value="<%= @record.address %>" />
 
 <label for="major">Major:</label>
-<input id="major" name="record[major]" type="text" required value="<%= @record.major %>" />
-
+<input id="major" name="record[major]" type="text" required placeholder="Major" value="<%= @record.major %>" />
 
 <label for="birthday">Birth Date:</label>
 <input id="birthday" name="record[birthday]" type="Date" required value="<%= @record.birthday %>" />
 
-
-
-<!--<label for="minor">Minor:</label>
-<input id="minor" name="record[minor]" type="text" value="<%= @record.minor %>" />-->
 <br />
 <br />
 <input type="submit" value="SAVE DETAILS" />
@@ -32,4 +27,3 @@
 <button><a href="/students">BACK TO RECORDS</a></button>
 <br />
 <br />
-<button><a href="/logout">LOG OUT</a></button>

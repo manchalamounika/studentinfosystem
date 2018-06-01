@@ -1,7 +1,7 @@
 <!-- SHOW STUDENT DETAILS -->
 <h1 style="color: purple;">Name: <%= @record.first_name+ " " + @record.last_name %></h1>
 <h1 style="color: purple;">Address: <%= @record.address %></h1>
-<h1 style="color: purple;">Student ID: <%= @record.id %></h1>
+<h1 style="color: purple;">Student ID: <%= @record.student_id %></h1>
 <h1 style="color: purple;">Major: <%= @record.major %></h1>
 <h1 style="color: purple;">Birth Date: <%= @record.birthday %></h1>
 <!--<h1>Minor: <%= @record.minor %></h1>-->
@@ -19,4 +19,3 @@
 <input type="submit" value="DELETE THIS RECORD" />
 </form><br />
 <br />
-<button><a href="/logout">LOG OUT</a></button>

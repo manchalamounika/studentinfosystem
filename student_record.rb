@@ -10,7 +10,8 @@ class Student
 	property :id, Serial
 	property :first_name, String
 	property :last_name, String
-	property :birthday, Date 
+	property :birthday, Date
+	property :student_id, Integer
 	property :address, Text
 	property :major, String
 	property :minor, String
